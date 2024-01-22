@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  cursor: default;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: auto;
+}
+
+.logo {
+  width: 120px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.content {
+  top: 50%;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 90%;
+  position: absolute;
+  transform: translateY(-50%);
+  color: #fff;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 45px;
+  padding-right: 50px;
+  background: linear-gradient(270deg, #0D0A1900, #000012);
+  backdrop-filter: blur(0px);
+  border-radius: 8px;
+}
+@media (max-width: 992px) {
+  .content {
+    width: 90%;
+    top: 40%;
+    left: 0%;
+    padding-left: 45px;
+    scale: 0.85;
+  }
+}
+
+.content h1 {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 4px 4px 8px black;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.img {
+  border: solid 1px transparent;
+  box-shadow: 1px 0 35px -10px rgba(130, 115, 190, 0.95);
+  transition: all 0.2s ease-in, box-shadow 0.4s ease-in-out;
+}
+.img:hover {
+  border: solid 4px #c8aa6d;
+  box-shadow: 1px 0 35px -10px #c8aa6d;
+  transition: all 0.2s ease-in, box-shadow 0.4s ease-in-out;
+}
+
+.content h1 span {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-size: 80px;
+  text-shadow: 4px 4px 8px black;
+  font-style: normal;
+  color: #7873e6;
+}
+
+.content button {
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  padding: 12px 25px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.content button img {
+  width: 15px;
+  margin-left: 10px;
+}
+
+.launch-time {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+}
+
+.launch-time div {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  flex-basis: 200px;
+}
+
+.launch-time div p {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  margin-bottom: -4px;
+}
+
+.rocket {
+  width: 420px;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  animation: rocket 5s linear infinite;
+}
+
+@keyframes rocket {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  100% {
+    bottom: 105%;
+    opacity: 1;
+  }
+}
