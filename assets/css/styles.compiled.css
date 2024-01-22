@@ -24,6 +24,7 @@
 }
 
 .content {
+  z-index: 5;
   top: 50%;
   font-family: "VT323", monospace;
   font-weight: 400;
@@ -36,15 +37,15 @@
   padding-bottom: 35px;
   padding-left: 45px;
   padding-right: 50px;
-  background: linear-gradient(270deg, #0D0A1900, #000012);
+  background: linear-gradient(270deg, #0D0A1900, #00001280);
   backdrop-filter: blur(0px);
   border-radius: 8px;
 }
 @media (max-width: 992px) {
   .content {
-    width: 90%;
+    width: 100%;
     top: 40%;
-    left: 0%;
+    left: -10px;
     padding-left: 45px;
     scale: 0.85;
   }
@@ -55,7 +56,7 @@
   font-weight: 400;
   font-style: normal;
   text-shadow: 4px 4px 8px black;
-  font-size: 80px;
+  font-size: 50px;
   font-weight: 600;
 }
 
@@ -73,7 +74,7 @@
 .content h1 span {
   font-family: "VT323", monospace;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 50px;
   text-shadow: 4px 4px 8px black;
   font-style: normal;
   color: #7873e6;
@@ -128,8 +129,8 @@
 
 @keyframes rocket {
   0% {
-    bottom: 0;
-    opacity: 0;
+    bottom: -40vh;
+    opacity: 0.4;
   }
   100% {
     bottom: 105%;
