@@ -1,7 +1,12 @@
+
 if (window.innerWidth < 768) {
-	$('[data-bss-disabled-mobile]').removeClass('animated').removeAttr('data-aos data-bss-hover-animate');
+	[].slice.call(document.querySelectorAll('[data-bss-disabled-mobile]')).forEach(function (elem) {
+		elem.classList.remove('animated');
+		elem.removeAttribute('data-bss-hover-animate');
+		elem.removeAttribute('data-aos');
+	});
 }
 
-$(document).ready(function(){
+document.addEventListener('DOMContentLoaded', function() {
 	AOS.init();
-});
+}, false);
